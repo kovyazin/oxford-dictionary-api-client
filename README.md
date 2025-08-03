@@ -15,13 +15,13 @@ A TypeScript library for interacting with the Oxford Dictionary API. This librar
 ## Installation
 
 ```bash
-npm install oxford-dictionary-api
+npm install oxford-dictionary-api-client
 ```
 
 ## Quick Start
 
 ```typescript
-import { OxfordDictionary } from "oxford-dictionary-api";
+import { OxfordDictionary } from "oxford-dictionary-api-client";
 
 // Initialize the client
 const dictionary = new OxfordDictionary(
