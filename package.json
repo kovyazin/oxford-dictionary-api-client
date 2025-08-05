@@ -1,7 +1,7 @@
 {
   "name": "oxford-dictionary-api-client",
   "description": "A Node.js and browser wrapper for Oxford Dictionary API",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "type": "module",
