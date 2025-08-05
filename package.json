@@ -20,6 +20,14 @@
     "dictionary",
     "api"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kovyazin/oxford-dictionary-api-client.git"
+  },
+  "homepage": "https://github.com/kovyazin/oxford-dictionary-api-client#readme",
+  "bugs": {
+    "url": "https://github.com/kovyazin/oxford-dictionary-api-client/issues"
+  },
   "license": "MIT",
   "scripts": {
     "dev": "vite --host",
