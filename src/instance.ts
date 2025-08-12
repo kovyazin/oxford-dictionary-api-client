@@ -15,9 +15,9 @@ import {
 } from "./utils.js";
 
 type Headers = {
-  app_id: string;
-  app_key: string;
-  [key: string]: string;
+  app_id?: string;
+  app_key?: string;
+  [key: string]: string | undefined;
 };
 
 export class OxfordDictionary {
