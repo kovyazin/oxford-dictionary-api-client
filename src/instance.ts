@@ -14,22 +14,25 @@ import {
   concatPathAndQueryString,
 } from "./utils.js";
 
+type Headers = {
+  app_id: string;
+  app_key: string;
+  [key: string]: string;
+};
+
 export class OxfordDictionary {
-  #appId: string;
-  #appKey: string;
+  #headers: Headers;
   #baseUrl: string;
 
-  constructor(appId: string, appKey: string, baseUrl: string) {
-    this.#appId = appId;
-    this.#appKey = appKey;
+  constructor(baseUrl: string, headers: Headers) {
+    this.#headers = headers;
     this.#baseUrl = baseUrl;
   }
 
   private async request<T>(path: string): Promise<T> {
     try {
-      const credentials = { app_id: this.#appId, app_key: this.#appKey };
       const basicHeaders = { "Content-Type": "application/json" };
-      const headers = { ...credentials, ...basicHeaders };
+      const headers = { ...this.#headers, ...basicHeaders };
 
       const url = `${this.#baseUrl}${path}`;
 
